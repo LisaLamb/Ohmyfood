@@ -10,6 +10,7 @@ $colour-tertiary:#99E2D0;
     max-width:1440px;
     align-items:center;
     margin:0 auto;
+    height:100%;
 }
 
 body {
@@ -35,6 +36,7 @@ body {
         background-color:$colour-background-primary;
         width:$wide-width;
         height:3%;
+        box-shadow: 1px 1px 12px #555;
     }
 
     .content-searchbar{
@@ -58,16 +60,26 @@ body {
         height:15%;
     }
 
+    .introduction{
+        width:70%;
+        margin-left:15%;
+        margin-right:15%;
+    }
+
     .sous_titre{
         font-weight:100;
+        font-size:0.8rem;
         color:gray;
+        margin-bottom:20px;
     }
 
     .btn-primary {
-        border-radius:15px 15px 15px 15px;
-        height:15%;
-        background:linear-gradient($colour-primary,$colour-secondary);
+        border-radius:20px 20px 20px 20px;
+        background:linear-gradient($colour-secondary,$colour-primary);
         color:white;
+        border:none;
+        padding:12px;
+        box-shadow: 5px 5px 5px lightgrey;
     }
     /*fonctionnement*/
     .section-fonction{
@@ -86,11 +98,27 @@ body {
         display:flex;
         flex-direction: row;
         background-color:#F8F8F8;
-        border-radius:10%;
+        border-radius:15px;
         width:80%;
         align-items: center;
-        margin-top:5px;
-        margin-bottom:5px;
+        margin-top:10px;
+        margin-bottom:10px;
+        box-shadow: 5px 5px 5px lightgrey;
+    }
+
+    .number{
+        background-color:$colour-primary;
+        color:white;
+        font-size:0.8rem;
+        padding-left:10px;
+        padding-right:10px;
+        padding-top:5px;
+        padding-bottom:5px;
+        border-radius:15px;
+    }
+
+    .section-fonction .titre{
+        margin-left:20px;
     }
 
     .text{
@@ -98,37 +126,91 @@ body {
         justify-content:space-evenly;
         align-items: center;
         width:100%;
+        margin-top:20px;
+        margin-bottom:20px;
+        margin-right:20px;
     }
 
+    .text i{
+        color:gray;
+    }
 
     /*restaurants*/
 
     .section-restaurants{
         height:1000px;
+        background-color:$colour-background-secondary;
+    }
+
+    .section-restaurants .titre{
+        padding-top:50px;
+        margin-left:20px;
     }
 
     .cadre{
-        border: solid 5px white;
         background-color: #fff;
         border-radius: 20px;
         padding: 0px;
-        box-shadow: 5px 5px 5px lightgrey;
+        box-shadow: 1px 1px 5px lightgrey;
         display:flex;
         flex-direction:column;
-        width:100%;
+        margin-bottom:50px;
+        width:90%;
+        margin-right:5%;
+        margin-left:5%;
     }
 
     .content-cadre{
         display: flex;
         flex-direction:column;
         height:100%;
-        margin-top:10px;
         margin-bottom:5px;
+        position:relative;
+    }
+
+    .texte-cadre{
+        display:flex;
+        flex-direction: row;
+        width:90%;
+        justify-content:space-between;
+        margin:10px;
+    }
+
+    .titre_cadre{
+        font-size:1.1rem;
+    }
+
+    .icon-cadre{
+        margin-top:4px;
+    }
+
+    .sous_titre_cadre{
+        margin-top:5px;
+        font-size:1rem;
     }
 
     .content-cadre img{
         max-width: 100%;
         max-height:70%;
+        object-fit: contain;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    #resize{
+        width:100%;
+        height:200px;
+        object-fit: cover;
+    }
+
+    .new{
+        background-color:$colour-tertiary;
+        color:rgb(41, 160, 105);
+        font-weight:800;
+        width:80px;
+        text-align:center;
+        border-radius:3px;
+        padding:5px;
+        position:absolute;
     }
 
 
