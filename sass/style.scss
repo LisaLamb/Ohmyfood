@@ -23,8 +23,9 @@ body {
 .header-logo{
         display:flex;
         justify-content:center;
-        margin:8%;
+        margin:5%;
         justify-content: space-around;
+        position:relative;
     }
 .section-searchbar{
         display:flex;
@@ -33,7 +34,7 @@ body {
         background-color:$colour-background-primary;
         width:$wide-width;
         height:3%;
-        box-shadow: 1px 1px 12px #555;
+        box-shadow: inset 0px 7px 8px -10px #555;
     }
 
 .content-searchbar{
@@ -101,17 +102,20 @@ input{
         margin-top:10px;
         margin-bottom:10px;
         box-shadow: 5px 5px 5px lightgrey;
+        position:relative;
     }
 
     .number{
         background-color:$colour-primary;
         color:white;
         font-size:0.8rem;
-        padding-left:10px;
-        padding-right:10px;
-        padding-top:5px;
-        padding-bottom:5px;
+        padding-left:8px;
+        padding-right:8px;
+        padding-top:3px;
+        padding-bottom:4px;
         border-radius:15px;
+        position:absolute;
+        right:235px;
     }
 
     .section-fonction .titre{
@@ -130,12 +134,18 @@ input{
 
     .text i{
         color:gray;
+        margin-left:15px;
     }
 
     /*restaurants*/
 
+    .header-logo i {
+        position:absolute;
+        top:10px;
+        left:1px;
+    }
+
     .section-restaurants{
-        height:1000px;
         background-color:$colour-background-secondary;
     }
 
@@ -207,7 +217,12 @@ input{
         text-align:center;
         border-radius:3px;
         padding:5px;
+    }
+
+    .etiquette{
         position:absolute;
+        right:20px;
+        top:13px;
     }
 
 
@@ -258,12 +273,16 @@ input{
         font-weight:400;
         font-size:1.2rem;
         text-transform: uppercase;
+        margin-left:10px;
+        margin-top:0;
+        margin-bottom:5px;
     }
 
     .titre-menu{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-left:10px;
     }
 
     .titre-menu i{
@@ -283,22 +302,44 @@ input{
         justify-content: space-between;
     }
 
-    .content-cadre{
+    .content-cadre-menu{
         display:flex;
         justify-content: space-between;
+        flex-direction: row;
     }
 
     .cadre-menu{
         border: solid 5px white;
         background-color: #fff;
         border-radius: 10px;
-        box-shadow: 5px 5px 5px lightgrey;
+        box-shadow: 5px 5px 8px lightgrey;
         display:flex;
-        flex-direction:column;
+        flex-direction:row;
         width:90%;
+        margin-bottom:20px;
+        justify-content: space-between;
+    }
+
+    .trait{
+        background-color:$colour-tertiary;
+        width:15%;
+        height:3px;
+        margin-bottom:15px;
+        margin-left:10px;
+    }
+
+    .check{
+        background-color:$colour-tertiary;
+        color:$colour-background-tertiary;
+        width:35px;
+        border-radius:0px 10px 10px 0px;
     }
 
     h4, p{
         margin:0;
+    }
+
+    .content-cadre-menu p{
+        font-weight:100;
     }
 
