@@ -17,19 +17,16 @@ body {
     font-family:'Roboto';
     font-size:0.9rem;
     height:1500px;
+    margin:0px;
 }
-
-@media only screen and (max-width:425px){
-    body{
-        margin:0px;
-    }
-    .header-logo{
+   
+.header-logo{
         display:flex;
         justify-content:center;
         margin:8%;
         justify-content: space-around;
     }
-    .section-searchbar{
+.section-searchbar{
         display:flex;
         align-items:center;
         justify-content:center;
@@ -39,12 +36,12 @@ body {
         box-shadow: 1px 1px 12px #555;
     }
 
-    .content-searchbar{
+.content-searchbar{
         display:flex;
         width:50%;
     }
 
-    input{
+input{
         text-align:center;
         font-family:'Roboto';
         background-color:$colour-background-primary;
@@ -304,5 +301,4 @@ body {
     h4, p{
         margin:0;
     }
-}
 
