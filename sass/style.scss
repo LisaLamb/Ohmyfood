@@ -293,6 +293,8 @@ input{
     .menu-francais, .menu-note, .menu-gout, .menu-delice{
         background-color:#F8F8F8;
         border-radius:30px;
+        position:absolute;
+        margin-top:-30px;
     }
 
     .content-entree, .content-plats, .content-desserts{
@@ -306,10 +308,15 @@ input{
         display:flex;
         justify-content: space-between;
         flex-direction: row;
+        width:$wide-width;
+    }
+
+    .content-left{
+        width:$wide-width;
+        padding:10px;
     }
 
     .cadre-menu{
-        border: solid 5px white;
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 5px 5px 8px lightgrey;
@@ -331,8 +338,24 @@ input{
     .check{
         background-color:$colour-tertiary;
         color:$colour-background-tertiary;
-        width:35px;
+        width:70px;
         border-radius:0px 10px 10px 0px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-bouton{
+        display:flex;
+        justify-content: center;
+        padding:20px;
+    }
+
+    .btn-menu{
+        margin-bottom:60px;
+        margin-top:20px;
+        padding-left:30px;
+        padding-right:30px;
     }
 
     h4, p{
@@ -343,3 +366,208 @@ input{
         font-weight:100;
     }
 
+    .section-footer-menu{
+        font-family:'Roboto';
+        color:white;
+        background-color:#373a3c;
+        font-weight: 500;
+        display:flex;
+        flex-direction: column;
+        position:relative;
+        top:1060px;
+    }
+
+@media screen and (min-width:321px) and (max-width:1099px){
+    .content-searchbar{
+        justify-content: center;
+    }
+
+    .number{
+        display:none;
+    }
+
+    #resize{
+        height:460px;
+    }
+
+    .text{
+        justify-content:center;
+    }
+
+    .text i {
+        margin-right:30px;
+    }
+}
+
+@media screen and (min-width:1100px) and (max-width:1450px){
+    .content-searchbar{
+        justify-content: center;
+    }
+
+    body{
+        font-size:1.2rem;
+        height:1300px;
+    }
+
+    .section-searchbar{
+        height:6%;
+    }
+
+    .sous_titre{ 
+        font-size:1.1rem;
+    }
+
+    .btn-primary{
+        height:50px;
+        width:250px;
+        font-size:1.1rem;
+        margin:20px;
+    }
+
+    .new{
+        width:90px;
+    }
+
+    .titre_cadre{
+        font-size:1.2rem;
+    }
+    .sous_titre_cadre{
+        font-size:1.1rem;
+    }
+
+    .section-restaurants{
+        display:flex;
+    }
+
+    .cadre{
+        margin-top:100px;
+        flex-direction:row;
+    }
+
+    .content-cadre{
+        max-height:240px;
+        width:180px;
+    }
+
+    .number{
+        display:none;
+    }
+
+    #resize{
+        height:114px;
+    }
+    .section-fonction{
+        padding-bottom:50px;
+    }
+
+    .text{
+        justify-content:center;
+    }
+
+    .text i {
+        margin-right:30px;
+    }
+    .section-footer{
+        align-items: center;
+    }
+
+    .title_footer{
+        padding:0px;
+    }
+
+    .list{
+        line-height: 2rem;
+    }
+
+    .list li{
+        width:100%;
+        align-items:center;
+    }
+
+}
+@media screen and (min-width:1452px) and (max-width:1900px){
+    body{
+        font-size:1.3rem;
+        height:1300px;
+    }
+
+    .section-searchbar{
+        height:6%;
+    }
+
+    .section-fonction{
+        padding-bottom:50px;
+    }
+
+    .sous_titre{
+        font-size:1.2rem;
+    }
+
+    .btn-primary{
+        height:50px;
+        width:250px;
+        font-size:1.2rem;
+        margin:20px;
+    }
+
+    .new{
+        width:150px;
+    }
+
+    .titre_cadre{
+        font-size:1.2rem;
+    }
+    .sous_titre_cadre{
+        font-size:1.1rem;
+    }
+
+    .section-restaurants{
+        display:flex;
+    }
+
+    .cadre{
+        margin-top:100px;
+        flex-direction:row;
+    }
+
+    .content-cadre{
+        max-height:240px;
+    }
+    .content-searchbar{
+        justify-content: center;
+    }
+
+    .number{
+        display:none;
+    }
+
+    #resize{
+        height:1100px;
+    }
+
+    .text{
+        justify-content:center;
+    }
+
+    .text i {
+        margin-right:30px;
+    }
+
+    .section-footer{
+        align-items: center;
+    }
+
+    .title_footer{
+        padding:0px;
+    }
+
+    .list{
+        line-height: 2rem;
+    }
+
+    .list li{
+        width:100%;
+        align-items:center;
+    }
+
+}
