@@ -12,6 +12,11 @@ body {
   margin: 0px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .header-logo {
   display: flex;
   justify-content: center;
@@ -33,6 +38,10 @@ body {
 .content-searchbar {
   display: flex;
   width: 50%;
+}
+
+.content-cadre-menu p {
+  text-overflow: ellipsis;
 }
 
 input {
@@ -255,6 +264,21 @@ input {
   object-fit: cover;
 }
 
+.header-logo-menu {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+  position: relative;
+}
+
+.arrow {
+  margin-right: 36px;
+}
+
+.fa, .fas {
+  padding-top: 11px;
+}
+
 .titre-menu-header {
   font-family: "Shrikhand";
   font-size: 1.3rem;
@@ -280,6 +304,7 @@ input {
 .titre-menu i {
   display: flex;
   align-items: center;
+  margin-right: 20px;
 }
 
 .menu-francais, .menu-note, .menu-gout, .menu-delice {
@@ -369,7 +394,15 @@ h4, p {
   top: 1060px;
 }
 
-@media screen and (min-width: 321px) and (max-width: 1099px) {
+.title_footer_menu {
+  width: 100%;
+  padding-left: 10%;
+  margin-bottom: 0;
+  font-family: "Shrikhand";
+  color: white;
+}
+
+@media screen and (min-width: 321px) and (max-width: 1023px) {
   .content-searchbar {
     justify-content: center;
   }
@@ -389,8 +422,52 @@ h4, p {
   .text i {
     margin-right: 30px;
   }
+
+  .cadrelong {
+    max-width: 500px;
+  }
+
+  .list {
+    line-height: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .title_footer_menu {
+    width: 100%;
+    text-align: center;
+    margin-left: 45px;
+  }
+
+  /*page-menu*/
+  .menu-francais {
+    width: 100%;
+    height: 1300px;
+  }
+
+  .cadre-menu {
+    max-width: 500px;
+  }
+
+  .sous-titre-menu {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .trait {
+    margin-left: 328px;
+  }
+
+  .title_footer_menu {
+    padding: 0px;
+    margin-left: 0px;
+  }
+
+  .list {
+    padding: 0px;
+  }
 }
-@media screen and (min-width: 1100px) and (max-width: 1450px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   .content-searchbar {
     justify-content: center;
   }
@@ -398,6 +475,10 @@ h4, p {
   body {
     font-size: 1.2rem;
     height: 1300px;
+  }
+
+  input {
+    font-size: 1.5rem;
   }
 
   .section-searchbar {
@@ -429,16 +510,30 @@ h4, p {
 
   .section-restaurants {
     display: flex;
+    flex-direction: column;
   }
 
-  .cadre {
-    margin-top: 100px;
+  .section-cadre {
+    display: flex;
     flex-direction: row;
   }
 
+  .cadrelong {
+    max-width: 500px;
+  }
+
+  .cadre {
+    margin-top: 70px;
+    flex-direction: row;
+    margin-bottom: 100px;
+    margin-right: 20px;
+    margin-left: 10px;
+    width: 100%;
+  }
+
   .content-cadre {
-    max-height: 240px;
-    width: 180px;
+    max-height: 300px;
+    width: 100%;
   }
 
   .number {
@@ -446,7 +541,7 @@ h4, p {
   }
 
   #resize {
-    height: 114px;
+    height: 226px;
   }
 
   .section-fonction {
@@ -467,21 +562,83 @@ h4, p {
 
   .title_footer {
     padding: 0px;
+    width: 100%;
+    text-align: center;
+    margin-left: 45px;
   }
 
   .list {
     line-height: 2rem;
+    width: 100%;
+    text-align: center;
   }
 
   .list li {
     width: 100%;
     align-items: center;
   }
+
+  /*page-menu*/
+  .menu-francais {
+    width: 100%;
+    height: 864px;
+  }
+
+  .cadre-menu {
+    max-width: 500px;
+  }
+
+  .sous-titre-menu {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .trait {
+    margin-left: 436px;
+    margin-bottom: 20px;
+  }
+
+  .title_footer_menu {
+    text-align: center;
+    padding: 0px;
+  }
+
+  .list {
+    padding: 0px;
+  }
+
+  .content-entree, .content-plats, .content-desserts {
+    flex-direction: row;
+  }
+
+  .cadre-menu {
+    width: auto;
+    height: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .content-cadre-menu p {
+    text-overflow: ellipsis;
+  }
+
+  .section-footer-menu {
+    top: 819px;
+  }
+
+  .btn-menu {
+    margin-top: 70px;
+  }
 }
-@media screen and (min-width: 1452px) and (max-width: 1900px) {
+@media screen and (min-width: 1440px) {
   body {
     font-size: 1.3rem;
     height: 1300px;
+  }
+
+  input {
+    font-size: 1.5rem;
   }
 
   .section-searchbar {
@@ -519,6 +676,10 @@ h4, p {
     display: flex;
   }
 
+  .cadrelong {
+    max-width: 500px;
+  }
+
   .cadre {
     margin-top: 100px;
     flex-direction: row;
@@ -554,15 +715,86 @@ h4, p {
 
   .title_footer {
     padding: 0px;
+    width: 100%;
+    text-align: center;
+    margin-left: 45px;
   }
 
   .list {
     line-height: 2rem;
+    width: 100%;
+    text-align: center;
   }
 
   .list li {
     width: 100%;
     align-items: center;
+  }
+
+  /*page-menu*/
+  .menu-francais {
+    width: 100%;
+    height: 1064px;
+  }
+
+  .cadre-menu {
+    max-width: 500px;
+  }
+
+  .sous-titre-menu {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+  }
+
+  .trait {
+    margin-left: 608px;
+    margin-bottom: 50px;
+  }
+
+  .title_footer_menu {
+    text-align: center;
+    padding: 0px;
+  }
+
+  .list {
+    padding: 0px;
+  }
+
+  .content-entree, .content-plats, .content-desserts {
+    flex-direction: row;
+  }
+
+  .cadre-menu {
+    height: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .content-cadre-menu p {
+    text-overflow: ellipsis;
+  }
+
+  .section-footer-menu {
+    top: 1019px;
+  }
+
+  .btn-menu {
+    margin-top: 70px;
+    font-size: 1.3rem;
+  }
+
+  .titre-menu-header {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.4rem;
   }
 }
 
