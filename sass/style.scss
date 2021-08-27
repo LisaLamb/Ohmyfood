@@ -221,11 +221,11 @@ input{
     }
 
     .far.fa-heart{
-        font-size:25px;
+        font-size:33px;
     }
 
     .fas.fa-heart{
-        font-size:25px;
+        font-size:33px;
     }
 
     .prix{
@@ -240,7 +240,7 @@ input{
     .fas.fa-heart:hover{
         position:absolute;
         color:pink;
-        top:-11px;
+        right:5px;
         opacity:100%;
         background: -webkit-gradient(linear, left top, left bottom, from($colour-primary), to($colour-secondary));
         -webkit-background-clip: text;
@@ -249,7 +249,7 @@ input{
 
     .icon-cadre .fas.fa-heart {
         position:absolute;
-        top:-11px;
+        right:5px;
         opacity:0%;
     }
 
@@ -293,6 +293,30 @@ input{
 
     .background{
         background-image: url(img/stil-u2Lp8tXIcjw-unsplash.jpg);
+        width:100%;
+        height:180px;
+        background-size: cover;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .background-gout{
+        background-image:url(img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        width:100%;
+        height:180px;
+        background-size: cover;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .background-francais{
+        background-image:url(img/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+        width:100%;
+        height:180px;
+        background-size: cover;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .background-delice{
+        background-image:url(img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
         width:100%;
         height:180px;
         background-size: cover;
@@ -349,12 +373,12 @@ input{
 
     .titre-menu-header{
         font-family:'Shrikhand';
-        font-size:1.3rem;
+        font-size:1.7rem;
     }
 
     .sous-titre-menu{
         font-family:'Roboto';
-        font-weight:400;
+        font-weight:100;
         font-size:1.2rem;
         text-transform: uppercase;
         margin-left:10px;
@@ -394,6 +418,7 @@ input{
         justify-content: space-between;
         flex-direction: row;
         width:$wide-width;
+        margin-top:7px;
     }
 
     .content-left{
@@ -409,13 +434,12 @@ input{
         flex-direction:row;
         width:90%;
         margin-bottom:20px;
-        justify-content: space-between;
-        margin:auto;
+        margin-right:10px;
     }
 
     .trait{
         background-color:$colour-tertiary;
-        width:15%;
+        width:45px;
         height:3px;
         margin-bottom:15px;
         margin-left:10px;
@@ -534,7 +558,6 @@ input{
     /*page-menu*/
     .menu-francais{
         width:100%;
-        height:1300px;
     }
 
     .cadre-menu{
@@ -542,12 +565,7 @@ input{
     }
 
     .sous-titre-menu{
-        text-align:center;
         margin-top:20px;
-    }
-
-    .trait{
-        margin-left:328px;
     }
 
     .title_footer_menu{
@@ -673,17 +691,15 @@ input{
     }
 
     .cadre-menu{
-        max-width:400px;
+        max-width:315px;
     }
 
     .sous-titre-menu{
-        text-align:center;
         margin-top:20px;
         margin-bottom:20px;
     }
 
     .trait{
-        margin-left:436px;
         margin-bottom:20px;
     }
 
@@ -698,10 +714,6 @@ input{
     flex-direction:row;
     }
 
-    .cadre-menu{
-        width:auto;
-        height:90px;
-    }
     .section-footer-menu{
         top:819px;
     }
