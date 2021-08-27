@@ -40,13 +40,18 @@ a {
   justify-content: center;
   background-color: #E8E8E8;
   width: 100%;
-  height: 3%;
   box-shadow: inset 0px 7px 8px -10px #555;
 }
 
 .content-searchbar {
   display: flex;
   width: 50%;
+  height: 40px;
+}
+
+.fas.fa-map-marker-alt {
+  display: flex;
+  align-items: center;
 }
 
 .description {
@@ -61,6 +66,7 @@ input {
   font-family: "Roboto";
   background-color: #E8E8E8;
   border: none;
+  box-shadow: inset 0px 7px 8px -10px #555;
 }
 
 .section-introduction {
@@ -69,7 +75,6 @@ input {
   background-color: #F8F8F8;
   display: flex;
   width: 100%;
-  height: 15%;
 }
 
 .introduction {
@@ -175,9 +180,12 @@ input {
   box-shadow: 1px 1px 5px lightgrey;
   display: flex;
   flex-direction: column;
-  max-width: 80%;
+  max-width: 280px;
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 100%;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .content-cadre {
@@ -206,7 +214,15 @@ input {
 }
 
 .far.fa-heart {
-  position: absolute;
+  font-size: 25px;
+}
+
+.fas.fa-heart {
+  font-size: 25px;
+}
+
+.prix {
+  font-weight: bold !important;
 }
 
 .far.fa-heart:hover {
@@ -224,10 +240,14 @@ input {
   -webkit-text-fill-color: transparent;
 }
 
-.fas.fa-heart {
+.icon-cadre .fas.fa-heart {
   position: absolute;
   top: -11px;
   opacity: 0%;
+}
+
+.fas.fa-heart {
+  position: relative;
 }
 
 .sous_titre_cadre {
@@ -262,6 +282,14 @@ input {
   position: absolute;
   right: 20px;
   top: 13px;
+}
+
+.background {
+  background-image: url(img/stil-u2Lp8tXIcjw-unsplash.jpg);
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  border-radius: 8px 8px 0px 0px;
 }
 
 /*footer*/
@@ -310,10 +338,6 @@ input {
 
 .arrow {
   margin-right: 36px;
-}
-
-.fa, .fas {
-  padding-top: 11px;
 }
 
 .titre-menu-header {
@@ -621,7 +645,6 @@ h4, p {
 
   .title_footer {
     padding: 0px;
-    width: 100%;
     text-align: center;
     margin-left: 45px;
   }
@@ -736,10 +759,6 @@ h4, p {
   .cadre {
     margin-top: 100px;
     flex-direction: row;
-  }
-
-  .content-cadre {
-    max-height: 240px;
   }
 
   .content-searchbar {
