@@ -368,7 +368,8 @@ input{
     }
 
     .arrow{
-        margin-right:36px;
+        position:absolute;
+        left:0;
     }
 
     .titre-menu-header{
@@ -404,6 +405,7 @@ input{
         border-radius:30px;
         position:absolute;
         margin-top:-30px;
+        width:100%;
     }
 
     .content-entree, .content-plats, .content-desserts{
@@ -423,7 +425,7 @@ input{
 
     .content-left{
         width:80%;
-        padding:10px;
+        margin:10px;
     }
 
     .cadre-menu{
@@ -448,7 +450,7 @@ input{
     .check{
         background-color:$colour-tertiary;
         color:$colour-background-tertiary;
-        width:70px;
+        width:20%;
         border-radius:0px 10px 10px 0px;
         display:flex;
         align-items: center;
