@@ -232,11 +232,6 @@ input{
         font-weight:bold !important;
     }
 
-    .far.fa-heart:hover {
-        opacity:0%;
-        position:absolute;
-    }
-
     .fas.fa-heart:hover{
         position:absolute;
         color:pink;
@@ -247,14 +242,10 @@ input{
         -webkit-text-fill-color: transparent;
     }
 
-    .icon-cadre .fas.fa-heart {
+    .fas.fa-heart {
         position:absolute;
         right:5px;
         opacity:0%;
-    }
-
-     .fas.fa-heart{
-        position: relative;
     }
 
     .sous_titre_cadre{
